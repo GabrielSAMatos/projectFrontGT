@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
     height: 192px;
     width: 1440px;
     margin: auto;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 
     & div#divHeader{ 
         margin: 34px 100px 29px 100px;
