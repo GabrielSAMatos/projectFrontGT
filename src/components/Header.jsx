@@ -99,7 +99,6 @@ const HeaderContainer = styled.header`
     & a.linksSection2:hover{
         color: var(--primary);
         font-weight: 700;
-
     } 
     
     & a.linksSection2:hover::after {
