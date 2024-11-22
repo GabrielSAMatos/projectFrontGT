@@ -134,7 +134,7 @@ const Header = () => {
                         </form>
                         <a id="register" href="#Cadastre-se">Cadastre-se</a>
                         <a id="login" href="#Entrar"><button className="cursor-pointer">Entrar</button></a>
-                        <a id="shoppingCart" href="#Carrinho-de-Compras"><img src="src\Images\mini-cart.svg" alt="Carrinho de compras"/></a>
+                        <a id="shoppingCart" href="#Carrinho-de-Compras"><img src="src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></a>
                     </section>
 
                     <section className="h-100">

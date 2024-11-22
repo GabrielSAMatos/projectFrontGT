@@ -7,7 +7,7 @@ const StyledImage = styled.img`
 const Logo = () => {
     return ( 
         <>
-            <StyledImage src="src\Images\logo-header.svg" alt="Icone Digital Store"/> 
+            <StyledImage src="src\Images\icons\logo-header.svg" alt="Icone Digital Store"/> 
         </>
      );
 }
