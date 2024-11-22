@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-    width: 1440px;
     height: 454px;
     margin: auto;
     margin-top: 345px;
     background-color: var(--dark-gray);
     color: var(--white);
 
+    & footer{ // pra centralizar o footer
+        width: 1440px; 
+        margin: auto; 
+    }
     & section{
         margin: 72px 94px 0px 100px;
     }
@@ -106,7 +109,7 @@ const Footer = () => {
                                 <p className="pTitle">Informação</p>
                                 <ul>
                                     <li><a href="#Sobre-Drip-Store">Sobre Drip Store</a></li>
-                                    <li><a href="#Segurança">Segurança</a></li>
+                                    <li><a href="#Seguranca">Segurança</a></li>
                                     <li><a href="#Wishlist">Wishlist</a></li>
                                     <li><a href="#Blog">Blog</a></li>
                                     <li><a href="#Trabalhe-conosco">Trabalhe conosco</a></li>
@@ -119,10 +122,10 @@ const Footer = () => {
                                 <p className="pTitle">Categorias</p>
                                 <ul>
                                     <li><a href="#Camisetas">Camisetas</a></li>
-                                    <li><a href="#Calças">Calças</a></li>
-                                    <li><a href="#Bonés">Bonés</a></li>
+                                    <li><a href="#Calcas">Calças</a></li>
+                                    <li><a href="#Bones">Bonés</a></li>
                                     <li><a href="#Headphones">Headphones</a></li>
-                                    <li><a href="#Tênis">Tênis</a></li>
+                                    <li><a href="#Tenis">Tênis</a></li>
                                 </ul>
                             </div>
                         </li>
