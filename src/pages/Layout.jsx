@@ -3,13 +3,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Offers from '../components/Offers';
 
-const Layout = (/*{ children }*/) => {
+
+
+const Layout = () => {
   return (
     <div>
       <Header />
-      
       <Offers />
-
       <Footer />
     </div>
   );

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
     height: 454px;
     margin: auto;
-    margin-top: 345px;
+    //margin-top: 345px;
     background-color: var(--dark-gray);
     color: var(--white);
 

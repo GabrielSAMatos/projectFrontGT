@@ -7,19 +7,19 @@ import { InputIcon } from 'primereact/inputicon';
 
 const HeaderContainer = styled.header`
     height: 192px;
-    width: 1440px;
-    margin: auto;
     background-color: var(--white);
 
+    & section#sectionHeader{
+        width: 1440px;
+        margin: auto;
+    }
+
     & div#divHeader{ 
-        margin: 34px 100px 29px 100px;
+        margin: 34px 0px 29px 0px;
+        padding: 0px 100px 0px 100px;
         gap: 40px;
         width: 100%;
     }
-
-    & #section1Header{
-        
-    } 
     
     & input{
         width: 559px;
@@ -75,10 +75,6 @@ const HeaderContainer = styled.header`
         text-decoration: underline;
         text-underline-position: from-font;
     }
-
-    & #section2Header{
-
-    } 
     
     & ul{
         gap: 32px;
@@ -117,10 +113,10 @@ const HeaderContainer = styled.header`
 
 const Header = () => {
     return ( 
-        <HeaderContainer>
-            <header className="h-full flex">
+        <HeaderContainer className="h-full flex">
+            <section id="sectionHeader">
                 <div id="divHeader" className="flex flex-column">
-                    <section id="section1Header" className="flex align-items-center justify-content-start  relative">
+                    <section className="flex align-items-center justify-content-start  relative">
                         <a href="/"><Logo id="logo"/></a>
                         <form>
                             <div id="divInput">
@@ -141,7 +137,7 @@ const Header = () => {
                         <a id="shoppingCart" href="#Carrinho-de-Compras"><img src="src\Images\mini-cart.svg" alt="Carrinho de compras"/></a>
                     </section>
 
-                    <section id="section1Header" className="h-100">
+                    <section className="h-100">
                         <nav className="h-full">
                             <ul className="list-none flex align-items-center justify-content-start h-full relative">
                                 <li><a href="#Home" rel="noopener noreferrer"  className="linksSection2">Home</a></li>
@@ -152,7 +148,7 @@ const Header = () => {
                         </nav>
                     </section>
                 </div>
-            </header>
+            </section>
         </HeaderContainer>
      );
 }
