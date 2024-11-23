@@ -29,7 +29,6 @@ const OffersContainer = styled.section`
 
     & h5{
         margin-top: 120px;
-        margin-bottom: 20px;
         color: var(--warning);
         font-size: 16px;
         font-weight: 700;
@@ -38,6 +37,7 @@ const OffersContainer = styled.section`
     }
 
     & h1{
+        margin: 20px 0px;
         color: var(--dark-gray);
         font-size: 64px;
         font-weight: 800;
@@ -73,6 +73,9 @@ const OffersContainer = styled.section`
         opacity: 100%;
     }
 
+    & button{
+        margin-top: 40px;
+    }
 `
 
 const data = [
