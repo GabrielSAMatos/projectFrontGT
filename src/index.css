@@ -26,7 +26,8 @@
 }
 
 body{
-  background-color: gray;
+  background-color: var(--light-gray-3);
+
 }
 
 .title{
