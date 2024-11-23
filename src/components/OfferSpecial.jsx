@@ -7,9 +7,10 @@ const OfferSpecial = () => {
         background-color: var(--white);
         
         & section{
+            background-color: var(--white);
             width: 1440px;
             height: 553px;
-            gap: 67px;
+            gap: 97px;
         }
         
         & div#divContainerLeft{
@@ -38,6 +39,8 @@ const OfferSpecial = () => {
         }
 
         & h2{
+            margin-top: 17px;
+            margin-bottom: 20px;
             width: 514px;
             font-size: 48px;
             line-height: 50px;
@@ -46,7 +49,7 @@ const OfferSpecial = () => {
         }
 
         & p{
-            width: 589px;
+            width: 580px;
             height: 112px;
             font-size: 16px;
             line-height: 28px;
@@ -55,13 +58,16 @@ const OfferSpecial = () => {
         }
 
         & button {
+            margin-top: 30px;
             width: 200px;
+            font-size: 14px;
+            letter-spacing: 0.75px;
         }
     `
     return ( 
         <OfferSpecialContainer>
-            <section className="flex m-auto justify-content-center align-items-center">
-                <div id="divContainerLeft" className="relative border-1">
+            <section className="flex m-auto align-items-center">
+                <div id="divContainerLeft" className="relative">
                     <div id="bgShoes" className="flex justify-content-center align-items-center x"></div>
                     <img 
                         src="src\Images\products\Laye-1.png" 

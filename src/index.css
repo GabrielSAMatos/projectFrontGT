@@ -38,11 +38,12 @@ button{
   border-radius: 8px;
   background-color: var(--primary);
   color: var(--light-gray-3);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.75px;
   cursor: pointer;
+
 }
 
 button:hover{
