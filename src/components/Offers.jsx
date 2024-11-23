@@ -77,7 +77,7 @@ const OffersContainer = styled.section`
 
 const data = [
     {
-    id: '1', bg: '--primary', 
+    id: '1', 
     image:"src/Images/products/t-nike-white-red.png", 
     alt: "tenis branco nike",
     title: "Queima de estoque Nike🔥",
@@ -85,15 +85,7 @@ const data = [
     },
 
     {
-    id: '2', bg: '--primary', 
-    image:"src/Images/products/t-puma-blue1.png", 
-    alt: "tenis preto puma",
-    title: "Os tênis mais vendidos🔥",
-    frufru: "src/Images/products/dots-purple.png"
-    },
-
-    {
-    id: '3', bg: '--primary', 
+    id: '2', 
     image:"src/Images/products/t-adidas-gray2.png", 
     alt: "tenis cinza adidas",
     title: "Encontre o seu tênis ideal",
@@ -101,7 +93,15 @@ const data = [
     },
 
     {
-    id: '4', bg: '--primary', 
+    id: '3', 
+    image:"src/Images/products/t-puma-blue1.png", 
+    alt: "tenis preto puma",
+    title: "Os tênis mais vendidos🔥",
+    frufru: "src/Images/products/dots-purple.png"
+    },
+
+    {
+    id: '4', 
     image:"src/Images/products/t-nike-cow-2.png", 
     alt: "tenis vaca nike",
     title: "ATÉ 70% OFF FRETE GRÁTIS",
@@ -110,6 +110,9 @@ const data = [
 ]
 
 const Offers = () => {
+
+     
+
     return ( 
         <OffersContainer className="flex justify-content-center m-auto">
                 <Swiper
@@ -125,7 +128,11 @@ const Offers = () => {
                  // }}
                 >
                     {data.map ( (item) => (
-                        <SwiperSlide key={item.id} id="Container" className="flex swiper-slide" >
+                        <SwiperSlide 
+                        key={item.id} 
+                        id="Container" 
+                        className="flex swiper-slide" 
+                        >
                             <div id="divContainer">
                                 <h5>Melhores ofertas personalizadas</h5>
                                 <h1>{item.title}</h1>
