@@ -30,6 +30,28 @@ body{
 
 }
 
+
+button{
+  width: 220px;
+  height: 40px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--light-gray-3);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  background-color: #c92072ee;
+  text-decoration: underline;
+  text-underline-position: from-font;
+}
+
 .title{
   font-size: 24px;
   font-weight: 700;

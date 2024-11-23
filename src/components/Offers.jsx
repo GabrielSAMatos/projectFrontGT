@@ -110,9 +110,6 @@ const data = [
 ]
 
 const Offers = () => {
-
-     
-
     return ( 
         <OffersContainer className="flex justify-content-center m-auto">
                 <Swiper
@@ -137,7 +134,7 @@ const Offers = () => {
                                 <h5>Melhores ofertas personalizadas</h5>
                                 <h1>{item.title}</h1>
                                 <p>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                                <button></button>
+                                <a href="#Ofertas"><button className="buttonBGRed">Ver Ofertas</button></a>    
                             
                             </div>
                             <div className="relative">

@@ -61,9 +61,6 @@ const HeaderContainer = styled.header`
         border-radius: 8px;
         background-color: var(--primary);
         color: white;
-
-        //styleName: Text X-Small Bold;
-        font-family: Inter;
         font-size: 14px;
         font-weight: 700;
         line-height: 22px;
@@ -126,14 +123,12 @@ const Header = () => {
                                     type='submit'
                                     style={{ fontSize: '1.5rem', color: 'var(--light-gray-2)'}}
                                     />
-                                    <InputText type="text" name="searchProducts" id="searchProducts" placeholder="Pesquisar produto..." 
-
-                                    />
+                                    <InputText type="text" name="searchProducts" id="searchProducts" placeholder="Pesquisar produto..."/>
                                 </IconField>
                             </div>
                         </form>
                         <a id="register" href="#Cadastre-se">Cadastre-se</a>
-                        <a id="login" href="#Entrar"><button className="cursor-pointer">Entrar</button></a>
+                        <a id="login" href="#Entrar"><button>Entrar</button></a>
                         <a id="shoppingCart" href="#Carrinho-de-Compras"><img src="src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></a>
                     </section>
 
