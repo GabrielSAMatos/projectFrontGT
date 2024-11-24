@@ -10,10 +10,10 @@ const MiddleHomePage = () => {
     const MiddleContainer = styled.section`
         background-color: #F9F8FE;
         height: 1862px;
-        padding: 38px 100px 120px 100px;
     
     & section#container{
         width: 1440px;
+        padding: 38px 100px 120px 100px;
         margin: auto;
     }
 
