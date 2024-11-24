@@ -1,14 +1,26 @@
 import styled from "styled-components";
 import '../index.css';  
+import { shoeProduct, shoeProductStyles } from "./ProductCard";
 
 const MiddleHomePage = () => {
 
+    const { promotion, img, category, product, oldValue, currentValue } = shoeProduct;
+    const styles = shoeProductStyles;
+
     const MiddleContainer = styled.section`
-        background-color: #80808075;
+        background-color: #F9F8FE;
         height: 1862px;
-        width: 1440px;
         padding: 38px 100px 120px 100px;
     
+    & section#container{
+        width: 1440px;
+        margin: auto;
+    }
+
+    & a{
+        text-decoration: none;
+    }
+
     & div#containerPromocoes{
         gap: 12px;
     }
@@ -24,6 +36,7 @@ const MiddleHomePage = () => {
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.75px;
+        font-Weight: 700;
     }
 
     & .btnBuy{
@@ -31,6 +44,10 @@ const MiddleHomePage = () => {
         height: 48px;
         color: var(--primary);
         background-color: var(--light-gray-3);
+    }
+
+    & .btnBuy:hover{
+        background-color: #ffffff;
     }
 
     & div.divPromocoes{
@@ -89,93 +106,224 @@ const MiddleHomePage = () => {
         letter-spacing: 0.75px;
     }
 
+    & .containerAllItems{
+        display: flex;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    & .containerItems relative{
+        width: 292px;
+        height: 439px;
+    }
+
+    & .containerImgItems{
+        width: 292px;
+        height: 321px;
+        border-radius: 4px;
+        background-color: white;
+    }
 
     `
-
-    
+  
     return ( 
         <MiddleContainer className="m-auto">
-            <section>
-                <h4>Coleções em destaque</h4>
-                <div id="containerPromocoes" className="flex ">
-                    <div className="divPromocoes relative">
-                        <div className="escritaPromocoes z-1 absolute">
-                            <p className="off">30% OFF</p>
-                            <h3>Novo drop Supreme</h3>
-                            <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+            <section id="container">
+                <section>
+                    <h4>Coleções em destaque</h4>
+                    <div id="containerPromocoes" className="flex ">
+                        <div className="divPromocoes relative">
+                            <div className="escritaPromocoes z-1 absolute">
+                                <p className="off">30% OFF</p>
+                                <h3>Novo drop Supreme</h3>
+                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                            </div>
+                            <img 
+                            src="src\Images\products\shirtSW.png" 
+                            alt="Blusa Supreme Star Wars" 
+                            className="absolute bottom-0 right-0 z-0"
+                            />
                         </div>
-                        <img 
-                        src="src\Images\products\shirtSW.png" 
-                        alt="Blusa Supreme Star Wars" 
-                        className="absolute bottom-0 right-0 z-0"
-                        />
-                    </div>
-                    <div className="divPromocoes relative">
-                        <div className="escritaPromocoes absolute z-1">
-                            <p className="off">30% OFF</p>
-                            <h3>Coleção Adidas</h3>
-                            <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                        <div className="divPromocoes relative">
+                            <div className="escritaPromocoes absolute z-1">
+                                <p className="off">30% OFF</p>
+                                <h3>Coleção Adidas</h3>
+                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
 
+                            </div>
+                            <img 
+                            src="src\Images\products\ddd-1.png" 
+                            alt="Tenis Marca X" 
+                            className="absolute bottom-0 right-0 z-0 opacity-100"
+                            />
                         </div>
-                        <img 
-                        src="src\Images\products\ddd-1.png" 
-                        alt="Tenis Marca X" 
-                        className="absolute bottom-0 right-0 z-0 opacity-100"
-                        />
-                    </div>
-                    <div className="divPromocoes relative">
-                        <div className="escritaPromocoes">
-                            <p className="off">30% OFF</p>
-                            <h3>Novo <br/> Beats Bass</h3>
-                            <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                        <div className="divPromocoes relative">
+                            <div className="escritaPromocoes">
+                                <p className="off">30% OFF</p>
+                                <h3>Novo <br/> Beats Bass</h3>
+                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                            </div>
+                            <img 
+                            src="src\Images\products\headphone.png" 
+                            alt="Headphone" 
+                            className="absolute bottom-0 right-0"
+                            />
                         </div>
-                        <img 
-                        src="src\Images\products\headphone.png" 
-                        alt="Headphone" 
-                        className="absolute bottom-0 right-0"
-                        />
                     </div>
-                </div>
-            </section>
-            <section>
-                <h4 style={{textAlign: 'center', margin: '100px 0px 20px 0px'}}>Coleções em destaque</h4>
-                <div id="containerIcones" className="flex justify-content-center">
-                    <div  className="flex flex-column justify-content-center">
-                        <a href="#Blusas"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shirt.svg" alt="Icone de blusa"/></div></a>
-                        <span className="text-center legenda">Blusas</span>
+                </section>
+                <section>
+                    <h4 style={{textAlign: 'center', margin: '100px 0px 20px 0px'}}>Coleções em destaque</h4>
+                    <div id="containerIcones" className="flex justify-content-center">
+                        <div  className="flex flex-column justify-content-center">
+                            <a href="#Blusas"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shirt.svg" alt="Icone de blusa"/></div></a>
+                            <span className="text-center legenda">Blusas</span>
+                        </div>
+                        <div className="flex flex-column justify-content-center">
+                            <a href="#Calças"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-pants.svg" alt="Icone de blusa"/></div></a>
+                            <span className="text-center legenda">Calças</span>
+                        </div>
+                        <div className="flex flex-column justify-content-center">
+                            <a href="#Bonés"><div className="divIcones"><img className="icones" id="cap" src="src\Images\icons\vector-cap.svg" alt="Icone de blusa"/></div></a>
+                            <span className="text-center legenda">Bonés</span>
+                        </div>
+                        <div className="flex flex-column justify-content-center">
+                            <a href="#Headphones"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-headphone.svg" alt="Icone de blusa"/></div></a>
+                            <span className="text-center legenda">Headphones</span>
+                        </div>
+                        <div className="flex flex-column justify-content-center">
+                            <a href="#Tênis"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shoes.svg" alt="Icone de blusa"/></div></a>
+                            <span className="text-center legenda">Tênis</span>
+                        </div>
                     </div>
-                    <div className="flex flex-column justify-content-center">
-                        <a href="#Calças"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-pants.svg" alt="Icone de blusa"/></div></a>
-                        <span className="text-center legenda">Calças</span>
+                
+                </section>
+                <section>
+                <div className="flex justify-content-between" style={{margin: '123px 0px 20px 0px'}}>
+                        <h4 style={{textAlign: 'center'}}>Produtos em alta</h4>
+                        <div className="flex">
+                            <a id="verTodos" href="#Ver-Todos" className="flex" style={{color: 'var(--primary)', textDecoration: 'none'}}>
+                                <p className="flex align-items-center justify-content-center mr-2">Ver todos</p>
+                                <span style={{fontSize: '25px'}}>&#129106;</span>
+                            </a>
+                        </div>
+                    </div>                
+                    <div className="containerAllItems">
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                        <span style={styles.promotion}>{promotion}</span>
+                                        <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span style={styles.promotion}>{promotion}</span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-column justify-content-center">
-                        <a href="#Bonés"><div className="divIcones"><img className="icones" id="cap" src="src\Images\icons\vector-cap.svg" alt="Icone de blusa"/></div></a>
-                        <span className="text-center legenda">Bonés</span>
+                    <div className="containerAllItems">
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
+                        <div className="containerItems">
+                            <a href="#product-K-Swiss-V8-Masculino">
+                                <div className="containerImgItems relative">
+                                    <span></span>
+                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
+                                </div>
+                            </a>
+                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
+                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
+                            <div>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
+                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-column justify-content-center">
-                        <a href="#Headphones"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-headphone.svg" alt="Icone de blusa"/></div></a>
-                        <span className="text-center legenda">Headphones</span>
-                    </div>
-                    <div className="flex flex-column justify-content-center">
-                        <a href="#Tênis"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shoes.svg" alt="Icone de blusa"/></div></a>
-                        <span className="text-center legenda">Tênis</span>
-                    </div>
-                </div>
-               
-            </section>
-            <section>
-            <div className="flex justify-content-between" style={{margin: '123px 0px 20px 0px'}}>
-                    <h4 style={{textAlign: 'center'}}>Produtos em alta</h4>
-                     <div className="flex">
-                        <a id="verTodos" href="#Ver-Todos" className="flex" style={{color: 'var(--primary)', textDecoration: 'none'}}>
-                            <p className="flex align-items-center justify-content-center mr-2">Ver todos</p>
-                            <span style={{fontSize: '25px'}}>&#129106;</span>
-                        </a>
-                    </div>
-                </div>                
-                <div>
-
-                </div>
+                </section>
             </section>
         </MiddleContainer>
      );
