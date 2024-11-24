@@ -52,7 +52,17 @@ button:hover{
   text-underline-position: from-font;
 }
 
-.title{
+h3{
+  margin: 10px 0px 20px 0px;
+  width: 184px;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.9999998807907104px;
+
+}
+
+h4{
+  color: var(--dark-gray-2);
   font-size: 24px;
   font-weight: 700;
   line-height: 38px;
@@ -60,6 +70,5 @@ button:hover{
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
 }
 
