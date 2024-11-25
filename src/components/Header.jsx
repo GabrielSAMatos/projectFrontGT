@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import '../index.css';
 import { InputText } from 'primereact/inputtext';
@@ -137,10 +138,10 @@ const Header = () => {
                     <section className="h-100">
                         <nav className="h-full">
                             <ul className="list-none flex align-items-center justify-content-start h-full relative">
-                                <li><a href="#Home" rel="noopener noreferrer"  className="linksSection2">Home</a></li>
-                                <li><a href="#Produtos" rel="noopener noreferrer"  className="linksSection2">Produtos</a></li>
-                                <li><a href="#Categorias" rel="noopener noreferrer"  className="linksSection2">Categorias</a></li>
-                                <li><a href="#Meus-Pedidos" rel="noopener noreferrer" className="linksSection2">Meus Pedidos</a></li>
+                                <li><NavLink to={"/"} className="linksSection2">Home</NavLink></li> 
+                                <li><NavLink to={"/Products"} className="linksSection2">Produtos</NavLink></li>
+                                <li><NavLink to={"/Products"} className="linksSection2">Categorias</NavLink></li>
+                                <li><NavLink to={"/Products"} className="linksSection2">Meus Pedidos</NavLink></li>
                             </ul>
                         </nav>
                     </section>
