@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import '../index.css';  
-import { shoeProduct, shoeProductStyles } from "./ProductCard";
+import { generateProductHTML } from './ProductCard';
 
 const MiddleHomePage = () => {
-
-    const { promotion, img, category, product, oldValue, currentValue } = shoeProduct;
-    const styles = shoeProductStyles;
 
     const MiddleContainer = styled.section`
         background-color: #F9F8FE;
@@ -106,15 +103,10 @@ const MiddleHomePage = () => {
         letter-spacing: 0.75px;
     }
 
-    & .containerAllItems{
+    & .containerAllItems{ 
         display: flex;
         gap: 24px;
         margin-bottom: 40px;
-    }
-
-    & .containerItems relative{
-        width: 292px;
-        height: 439px;
     }
 
     & .containerImgItems{
@@ -123,7 +115,6 @@ const MiddleHomePage = () => {
         border-radius: 4px;
         background-color: white;
     }
-
     `
   
     return ( 
@@ -208,119 +199,8 @@ const MiddleHomePage = () => {
                         </div>
                     </div>                
                     <div className="containerAllItems">
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                        <span style={styles.promotion}>{promotion}</span>
-                                        <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span style={styles.promotion}>{promotion}</span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="containerAllItems">
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
-                        </div>
-                        <div className="containerItems">
-                            <a href="#product-K-Swiss-V8-Masculino">
-                                <div className="containerImgItems relative">
-                                    <span></span>
-                                    <img style={styles.img} src={img} alt="Tênis kwiss" className="absolute"/>
-                                </div>
-                            </a>
-                            <a href="#tenis"><p style={styles.category}>{category}</p></a>
-                            <a href="#product-K-Swiss-V8-Masculino"><h4 style={styles.product}>{product}</h4></a>
-                            <div>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.oldValue}>{oldValue}</span></a>
-                                <a href="#product-K-Swiss-V8-Masculino"><span style={styles.currentValue}>{currentValue}</span></a>
-                            </div>
+                        <div className="containerAllItems grid justify-content-center">
+                            {generateProductHTML(8)}
                         </div>
                     </div>
                 </section>

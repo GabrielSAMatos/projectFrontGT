@@ -1,10 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "../components/Header";
+import MiddleHomePage from "../components/MiddleHomePage";
+import Offers from "../components/Offers";
+import OfferSpecial from "../components/OfferSpecial";
 
 const HomePage = () => {
     return ( 
         <>
-        
+            <Offers />
+            <MiddleHomePage />
+            <OfferSpecial />
         </>
      );
 }
