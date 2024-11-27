@@ -65,7 +65,7 @@ export const shoeProductStyles = {
     lineHeight: '38px',
     letterSpacing: '0.75px',
     color: '#1F1F1F',
-    border: '1px solid black',
+    
   },
 
   containerItems: {

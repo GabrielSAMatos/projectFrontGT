@@ -72,3 +72,25 @@ h4{
   text-decoration-skip-ink: none;
 }
 
+h5{
+font-size: 14px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0.75px;
+color: var(--dark-gray-2);
+
+}
+
+.linha{
+    margin: auto;
+    margin-top: 34px;
+    margin-bottom: 23px;
+    background-color: white;
+    width: 1240px;
+    height: 1px;
+    opacity: 0.3px;
+}
+
+a{
+  text-decoration: none;
+}

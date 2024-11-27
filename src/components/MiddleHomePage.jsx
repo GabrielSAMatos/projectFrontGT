@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 import '../index.css';  
 import { generateProductHTML } from './ProductCard';
 
@@ -105,7 +104,6 @@ const MiddleHomePage = () => {
     }
 
     & .containerAllItems{ 
-        display: flex;
         gap: 24px;
         margin-bottom: 40px;
     }

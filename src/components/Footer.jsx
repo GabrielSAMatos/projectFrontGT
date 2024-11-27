@@ -64,16 +64,7 @@ const FooterContainer = styled.footer`
         text-decoration: underline;
     }
 
-    & #linha{
-        margin: auto;
-        margin-top: 34px;
-        margin-bottom: 23px;
-        background-color: white;
-        width: 1240px;
-        height: 1px;
-        opacity: 0.3px;
 
-    }
 
     & span{
         text-align: center;
@@ -140,7 +131,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </section>
-                <div id="linha"></div>
+                <div className="linha"></div>
                 <span>@ 2022 Digital College</span>
             </footer>
         </FooterContainer>
