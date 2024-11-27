@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Definição do produto
 export const shoeProduct = {
   promotion: '30% OFF',
   img: 'src/Images/products/shoe-kwiss.png',
@@ -10,7 +9,6 @@ export const shoeProduct = {
   currentValue: '$100'
 };
 
-// Estilos para o produto
 export const shoeProductStyles = {
   promotion: {
     width: '99px',

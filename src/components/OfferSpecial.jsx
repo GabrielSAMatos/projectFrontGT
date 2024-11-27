@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import '../index.css';
 
 const OfferSpecial = () => {
@@ -84,7 +85,8 @@ const OfferSpecial = () => {
                         dolore magna aliqua. Ut enim ad minim veniam, quis 
                         nostrud exercitation ullamco laboris nisi ut aliquip
                     </p>
-                    <a href="#Oferta-Nike-Jordan"><button>Ver Oferta</button></a>
+                    <a href="/Products"><button>Ver Oferta</button></a>
+
                 </div>
             </section>
         </OfferSpecialContainer>

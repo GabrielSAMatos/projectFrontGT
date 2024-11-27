@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import '../index.css';
 import { Swiper, SwiperSlide,} from "swiper/react";
 
@@ -136,8 +137,8 @@ const Offers = () => {
                             <div id="divContainer">
                                 <h5>Melhores ofertas personalizadas</h5>
                                 <h1>{item.title}</h1>
-                                <p>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                                <a href="#Ofertas"><button className="buttonBGRed">Ver Ofertas</button></a>    
+                                <p>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p> 
+                                <NavLink to={"/Products"}><button className="buttonBGRed">Ver Ofertas</button></NavLink>   
                             
                             </div>
                             <div className="relative">

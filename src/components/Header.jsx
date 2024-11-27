@@ -114,8 +114,8 @@ const Header = () => {
         <HeaderContainer className="h-full flex">
             <section id="sectionHeader">
                 <div id="divHeader" className="flex flex-column">
-                    <section className="flex align-items-center justify-content-start  relative">
-                        <a href="/"><Logo id="logo"/></a>
+                    <section id="HeaderMainContainer" className="flex align-items-center justify-content-start relative">
+                        <NavLink to={"/"}><Logo id="logo"/></NavLink>
                         <form>
                             <div id="divInput">
                                 <IconField>
@@ -130,9 +130,9 @@ const Header = () => {
                                 </IconField>
                             </div>
                         </form>
-                        <a id="register" href="#Cadastre-se">Cadastre-se</a>
-                        <a id="login" href="#Entrar"><button className="cursor-pointer">Entrar</button></a>
-                        <a id="shoppingCart" href="#Carrinho-de-Compras"><img src="src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></a>
+                        <NavLink to={"/"} id="register">Cadastre-se</NavLink>
+                        <NavLink to={"/"} id="login"><button className="cursor-pointer">Entrar</button></NavLink>
+                        <NavLink to={"/"} id="shoppingCart"><img src="src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></NavLink>
                     </section>
 
                     <section className="h-100">

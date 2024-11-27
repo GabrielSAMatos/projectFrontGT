@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import '../index.css';  
 import { generateProductHTML } from './ProductCard';
 
@@ -127,7 +128,8 @@ const MiddleHomePage = () => {
                             <div className="escritaPromocoes z-1 absolute">
                                 <p className="off">30% OFF</p>
                                 <h3>Novo drop Supreme</h3>
-                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                                <a href="/Products"><button className="btnBuy">Comprar</button></a>
+                                
                             </div>
                             <img 
                             src="src\Images\products\shirtSW.png" 
@@ -139,7 +141,8 @@ const MiddleHomePage = () => {
                             <div className="escritaPromocoes absolute z-1">
                                 <p className="off">30% OFF</p>
                                 <h3>Coleção Adidas</h3>
-                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                                <a href="/Products"><button className="btnBuy">Comprar</button></a>
+                                
 
                             </div>
                             <img 
@@ -152,7 +155,8 @@ const MiddleHomePage = () => {
                             <div className="escritaPromocoes">
                                 <p className="off">30% OFF</p>
                                 <h3>Novo <br/> Beats Bass</h3>
-                                <a href="#Comprar"><button className="btnBuy">Comprar</button></a>
+                                <a href="/Products"><button className="btnBuy">Comprar</button></a>
+                                
                             </div>
                             <img 
                             src="src\Images\products\headphone.png" 
@@ -166,33 +170,33 @@ const MiddleHomePage = () => {
                     <h4 style={{textAlign: 'center', margin: '100px 0px 20px 0px'}}>Coleções em destaque</h4>
                     <div id="containerIcones" className="flex justify-content-center">
                         <div  className="flex flex-column justify-content-center">
-                            <a href="#Blusas"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shirt.svg" alt="Icone de blusa"/></div></a>
+                            <a href="/Products"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shirt.svg" alt="Icone de blusa"/></div></a>
                             <span className="text-center legenda">Blusas</span>
                         </div>
                         <div className="flex flex-column justify-content-center">
-                            <a href="#Calças"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-pants.svg" alt="Icone de blusa"/></div></a>
+                            <a href="/Products"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-pants.svg" alt="Icone de blusa"/></div></a>
                             <span className="text-center legenda">Calças</span>
                         </div>
                         <div className="flex flex-column justify-content-center">
-                            <a href="#Bonés"><div className="divIcones"><img className="icones" id="cap" src="src\Images\icons\vector-cap.svg" alt="Icone de blusa"/></div></a>
+                            <a href="/Products"><div className="divIcones"><img className="icones" id="cap" src="src\Images\icons\vector-cap.svg" alt="Icone de blusa"/></div></a>
                             <span className="text-center legenda">Bonés</span>
                         </div>
                         <div className="flex flex-column justify-content-center">
-                            <a href="#Headphones"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-headphone.svg" alt="Icone de blusa"/></div></a>
+                            <a href="/Products"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-headphone.svg" alt="Icone de blusa"/></div></a>
                             <span className="text-center legenda">Headphones</span>
                         </div>
                         <div className="flex flex-column justify-content-center">
-                            <a href="#Tênis"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shoes.svg" alt="Icone de blusa"/></div></a>
+                            <a href="/Products"><div className="divIcones"><img className="icones" src="src\Images\icons\vector-shoes.svg" alt="Icone de blusa"/></div></a>
                             <span className="text-center legenda">Tênis</span>
                         </div>
                     </div>
                 
                 </section>
                 <section>
-                <div className="flex justify-content-between" style={{margin: '123px 0px 20px 0px'}}>
+                    <div className="flex justify-content-between" style={{margin: '123px 0px 20px 0px'}}>
                         <h4 style={{textAlign: 'center'}}>Produtos em alta</h4>
                         <div className="flex">
-                            <a id="verTodos" href="#Ver-Todos" className="flex" style={{color: 'var(--primary)', textDecoration: 'none'}}>
+                            <a id="verTodos" href="/Products" className="flex" style={{color: 'var(--primary)', textDecoration: 'none'}}>
                                 <p className="flex align-items-center justify-content-center mr-2">Ver todos</p>
                                 <span style={{fontSize: '25px'}}>&#129106;</span>
                             </a>
