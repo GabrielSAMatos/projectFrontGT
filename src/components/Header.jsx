@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import '../index.css';
 import { InputText } from 'primereact/inputtext';
@@ -51,7 +51,6 @@ const HeaderContainer = styled.header`
         text-underline-position: from-font;   
     }
 
-
     & a#login{
         margin-right: 70px;
     }
@@ -79,7 +78,7 @@ const HeaderContainer = styled.header`
         gap: 32px;
     }
     
-    & a.linksSection2{
+    & .linksSection2{
         text-decoration: none;
         line-height: 24px;
         letter-spacing: 0.75px;
@@ -87,30 +86,14 @@ const HeaderContainer = styled.header`
         font-weight: 400;
         line-height: 28px;
         color: var(--dark-gray-2);
-
-
     } 
     
-    & a.linksSection2:focus{
+    & .linksSection2.active{
         color: var(--primary);
         font-weight: 700;
     } 
-    
-    & a.linksSection2:focus::after{
-        color: var(--primary);
-        font-weight: 700;
-        transition: 1s;
-        content: ''; 
-        position: absolute; 
-        left: 0;
-        right: 0;
-        bottom: -5px; 
-        height: 3px; 
-        background-color: var(--primary); 
-        border-radius: 10px; 
-    } 
 
-    & a.linksSection2:hover::after {
+    & .linksSection2.active::after {
         transition: 1s;
         content: ''; 
         position: absolute; 
@@ -122,9 +105,25 @@ const HeaderContainer = styled.header`
         border-radius: 10px; 
     }
 
+    & .linksSection2:hover::after {
+        transition: 1s;
+        content: ''; 
+        position: absolute; 
+        left: 0;
+        right: 0;
+        bottom: -5px; 
+        height: 3px; 
+        background-color: var(--primary); 
+        border-radius: 10px; 
+    }
 `;
 
 const Header = () => {
+
+    const location = useLocation();
+
+    const isActive = (path) => location.pathname === path;
+
     return ( 
         <HeaderContainer className="h-full flex">
             <section id="sectionHeader">
@@ -153,10 +152,40 @@ const Header = () => {
                     <section className="h-100">
                         <nav className="h-full">
                             <ul className="list-none flex align-items-center justify-content-start h-full relative">
-                                <li><NavLink to={"/"} className="linksSection2">Home</NavLink></li> 
-                                <li><NavLink to={"/Products"} className="linksSection2">Produtos</NavLink></li>
-                                <li><NavLink to={"/Products"} className="linksSection2">Categorias</NavLink></li>
-                                <li><NavLink to={"/Products"} className="linksSection2">Meus Pedidos</NavLink></li>
+                                <li>
+                                    <NavLink
+                                        to={"/"}
+                                        className={`linksSection2 ${isActive("/") ? "active" : ""}`}>
+                                        Home
+                                    </NavLink>
+                                    </li>
+                                    
+                                    <li>
+                                    <NavLink
+                                        to={"/Products"}
+                                        className={`linksSection2 ${
+                                        isActive("/Products") ? "active" : ""}`}>
+                                        Produtos
+                                    </NavLink>
+                                    </li>
+
+                                    <li>
+                                    <NavLink
+                                        to={"/Category"}
+                                        className={`linksSection2 ${
+                                        isActive("/Category") ? "active" : ""}`}>
+                                        Categorias
+                                    </NavLink>
+                                    </li>
+
+                                    <li>
+                                    <NavLink
+                                        to={"/My-Orders"}
+                                        className={`linksSection2 ${
+                                        isActive("/My-Orders") ? "active" : ""}`}>
+                                        Meus Pedidos
+                                    </NavLink>
+                                    </li>
                             </ul>
                         </nav>
                     </section>
