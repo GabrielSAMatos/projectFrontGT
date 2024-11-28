@@ -3,7 +3,7 @@ import React from 'react';
 export const shoeProduct = {
   id: 1,
   promotion: '30% OFF',
-  img: 'src/Images/products/shoe-kwiss.png',
+  img: '../src/Images/products/shoe-kwiss.png',
   category: 'Tênis',
   product: 'K-Swiss V8 - Masculino',
   oldValue: '$200',

@@ -85,18 +85,18 @@ const Footer = () => {
                     <ul className="flex">
                         <li>
                             <div id="logoDigitalFooter">
-                                <img src="src\Images\icons\logo-footer.svg" alt="Icone Digital Store"/>
+                                <img src="..\src\Images\icons\logo-footer.svg" alt="Icone Digital Store"/>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur 
                                     adipiscing elit, sed do eiusmod tempor 
                                     incididunt ut labore et dolore.
                                 </p>
                                 <ul className="flex align-items-center gap-5">
-                                    <li><a href="#Facebook" target="_blank"><img src="src\Images\icons\facebook.svg" alt="Facebook icon" /></a></li>
-                                    <li><a href="#Instagram" target="_blank"><img src="src\Images\icons\instagram.svg" alt="Instagram icon" /></a></li>
-                                    <li><a href="#Twitter" target="_blank"><img src="src\Images\icons\twitter.svg" alt="Twitter icon" /></a></li>
-                                    <li><a href="https://github.com/GabrielSAMatos" target="_blank"><img src="src\Images\icons\github.svg" alt="Github icon" /></a></li>
-                                    <li><a href="https://www.linkedin.com/in/gabrielsamatos/" target="_blank"><img src="src\Images\icons\linkedin.svg" alt="Linkedin icon" /></a></li>
+                                    <li><a href="#Facebook" target="_blank"><img src="..\src\Images\icons\facebook.svg" alt="Facebook icon" /></a></li>
+                                    <li><a href="#Instagram" target="_blank"><img src="..\src\Images\icons\instagram.svg" alt="Instagram icon" /></a></li>
+                                    <li><a href="#Twitter" target="_blank"><img src="..\src\Images\icons\twitter.svg" alt="Twitter icon" /></a></li>
+                                    <li><a href="https://github.com/GabrielSAMatos" target="_blank"><img src="..\src\Images\icons\github.svg" alt="Github icon" /></a></li>
+                                    <li><a href="https://www.linkedin.com/in/gabrielsamatos/" target="_blank"><img src="..\src\Images\icons\linkedin.svg" alt="Linkedin icon" /></a></li>
                                 </ul>
                             </div>
                         </li>

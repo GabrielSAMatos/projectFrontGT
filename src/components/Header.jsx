@@ -146,7 +146,7 @@ const Header = () => {
                         </form>
                         <NavLink to={"/"} id="register">Cadastre-se</NavLink>
                         <NavLink to={"/"} id="login"><button className="cursor-pointer">Entrar</button></NavLink>
-                        <NavLink to={"/"} id="shoppingCart"><img src="src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></NavLink>
+                        <NavLink to={"/"} id="shoppingCart"><img src="..\src\Images\icons\mini-cart.svg" alt="Carrinho de compras"/></NavLink>
                     </section>
 
                     <section className="h-100">
