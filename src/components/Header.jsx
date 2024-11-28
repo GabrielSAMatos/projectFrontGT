@@ -46,10 +46,11 @@ const HeaderContainer = styled.header`
         margin-right: 30px;
         width: 102px;
         letter-spacing: 0.75px;
-        text-underline-position: from-font;
         color: var(--dark-gray-2);
-
+        text-decoration-line: underline;
+        text-underline-position: from-font;   
     }
+
 
     & a#login{
         margin-right: 70px;
@@ -90,21 +91,35 @@ const HeaderContainer = styled.header`
 
     } 
     
-    & a.linksSection2:hover{
+    & a.linksSection2:focus{
         color: var(--primary);
         font-weight: 700;
     } 
     
-    & a.linksSection2:hover::after {
+    & a.linksSection2:focus::after{
+        color: var(--primary);
+        font-weight: 700;
         transition: 1s;
-        content: ''; /* Adiciona um elemento vazio para a borda */
-        position: absolute; /* Posiciona o elemento em relação ao link */
+        content: ''; 
+        position: absolute; 
         left: 0;
         right: 0;
-        bottom: -5px; /* Ajusta a posição da borda abaixo do texto */
-        height: 3px; /* Define a espessura da borda */
-        background-color: var(--primary); /* Cor da borda */
-        border-radius: 10px; /* Arredonda a borda */
+        bottom: -5px; 
+        height: 3px; 
+        background-color: var(--primary); 
+        border-radius: 10px; 
+    } 
+
+    & a.linksSection2:hover::after {
+        transition: 1s;
+        content: ''; 
+        position: absolute; 
+        left: 0;
+        right: 0;
+        bottom: -5px; 
+        height: 3px; 
+        background-color: var(--primary); 
+        border-radius: 10px; 
     }
 
 `;

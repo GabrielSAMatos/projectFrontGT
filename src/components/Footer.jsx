@@ -3,7 +3,6 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
     height: 454px;
     margin: auto;
-    //margin-top: 345px;
     background-color: var(--dark-gray);
     color: var(--white);
 
@@ -64,8 +63,6 @@ const FooterContainer = styled.footer`
         text-decoration: underline;
     }
 
-
-
     & span{
         text-align: center;
         font-size: 13px;
@@ -73,6 +70,12 @@ const FooterContainer = styled.footer`
         line-height: 24px;
     }
 `;
+
+const year = new Date();
+
+const currentYear = year.getFullYear()
+
+
 
 const Footer = () => {
     return (
@@ -132,7 +135,7 @@ const Footer = () => {
                     </ul>
                 </section>
                 <div className="linha"></div>
-                <span>@ 2022 Digital College</span>
+                <span>@ {currentYear} Digital College</span>
             </footer>
         </FooterContainer>
     );
