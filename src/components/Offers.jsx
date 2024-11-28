@@ -84,7 +84,16 @@ const data = [
     id: '1', 
     image:"src/Images/products/t-nike-white-red.png", 
     alt: "tenis branco nike",
-    title: "Queima de estoque Nike🔥",
+    title: (
+        <>
+            Queima de estoque Nike <img 
+                src="src\Images\icons\fire.png" 
+                alt="Fire" 
+                style={{ marginBottom: '-5px', paddingTop: '5px' }} 
+            />
+        </>
+    ),
+
     frufru: "src/Images/products/Ornament-11.png"
     },
 
@@ -92,7 +101,15 @@ const data = [
     id: '2', 
     image:"src/Images/products/t-adidas-gray2.png", 
     alt: "tenis cinza adidas",
-    title: "Encontre o seu tênis ideal",
+    title: (
+        <>
+            Queima de estoque Nike <img 
+                src="src\Images\icons\fire.png" 
+                alt="Fire" 
+                style={{ marginBottom: '-5px', paddingTop: '5px' }} 
+            />
+        </>
+    ),
     frufru: "src/Images/products/dots-gray.png"
     },
 
@@ -100,7 +117,15 @@ const data = [
     id: '3', 
     image:"src/Images/products/t-puma-blue1.png", 
     alt: "tenis preto puma",
-    title: "Os tênis mais vendidos🔥",
+    title: (
+        <>
+            Queima de estoque Nike <img 
+                src="src\Images\icons\fire.png" 
+                alt="Fire" 
+                style={{ marginBottom: '-5px', paddingTop: '5px' }} 
+            />
+        </>
+    ),
     frufru: "src/Images/products/dots-purple.png"
     },
 
@@ -108,7 +133,15 @@ const data = [
     id: '4', 
     image:"src/Images/products/t-nike-cow-2.png", 
     alt: "tenis vaca nike",
-    title: "ATÉ 70% OFF FRETE GRÁTIS",
+    title: (
+        <>
+            Queima de estoque Nike <img 
+                src="src\Images\icons\fire.png" 
+                alt="Fire" 
+                style={{ marginBottom: '-5px', paddingTop: '5px' }} 
+            />
+        </>
+    ),
     frufru: "src/Images/products/dots-green.png"
     }
 ]

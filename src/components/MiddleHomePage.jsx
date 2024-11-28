@@ -127,7 +127,6 @@ const MiddleHomePage = () => {
                                 <p className="off">30% OFF</p>
                                 <h3>Novo drop Supreme</h3>
                                 <a href="/Products"><button className="btnBuy">Comprar</button></a>
-                                
                             </div>
                             <img 
                             src="src\Images\products\shirtSW.png" 
@@ -140,8 +139,6 @@ const MiddleHomePage = () => {
                                 <p className="off">30% OFF</p>
                                 <h3>Coleção Adidas</h3>
                                 <a href="/Products"><button className="btnBuy">Comprar</button></a>
-                                
-
                             </div>
                             <img 
                             src="src\Images\products\ddd-1.png" 

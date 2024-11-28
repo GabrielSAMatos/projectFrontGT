@@ -1,32 +1,37 @@
 import styled from "styled-components";
 import '../index.css';  
 import { generateProductHTML } from '../components/ProductCard.jsx';
+import ButtonOrder from "../components/ButtonOrder.jsx";
+
 
 const ProductListingPage = () => {
 
-    const OrdernarPor = {
-        text: 'Ordernar por'
-    };
-
-    const OrdernarPorStyle = {
-        text: { 
-            fontSize: '99px',
-            color: 'red'
-        }
-    }
-
-    const ProductListingPage = styled.section`
+    const ProductListingPage = styled.section `
         width: 1440px;
         height: 3276px;
         margin: auto;
-        padding: 40px 0px 0px 100px;
+        padding: 40px 100px 0px 100px;
         display: flex;
         flex-direction: column;
 
-        & #divContainer{
+        & #containerResults{
             height: 60px;
             margin-bottom: 40px;
+            align-items: center;
+        }
 
+        & p#resultsFor{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.75px;
+        }
+
+        & p#resultsFor span{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.75px;
         }
 
         & .containerSelect select{
@@ -62,7 +67,7 @@ const ProductListingPage = () => {
         }
 
         & .containerAllItems{ 
-            gap: 24px;
+            gap: 14px;
             margin-top: 0px;
 
         }
@@ -73,20 +78,15 @@ const ProductListingPage = () => {
             border-radius: 4px;
             background-color: white;
         }
-    }
     `
+
     return ( 
         <ProductListingPage>
-            <div id="divContainer" className="flex justify-content-between border-1">
-                <p>Resultados para “Tênis” - <span>389 produtos</span></p>
-                <div className="containerSelect">
-                    <select>
-                        <option value="relevantes"> Ordenar por: mais relevantes</option>
-                        <option value="recentes"> <span style={OrdernarPorStyle.text}>{OrdernarPor.text}</span>: mais recentes</option>
-                        <option value="populares"> Ordenar por: mais populares</option> 
-                    </select>
-                </div>
+            <div id="containerResults" className="flex justify-content-between relative">
+                <p id="resultsFor">Resultados para “Tênis” - <span>389 produtos</span></p>
+                <ButtonOrder/>
             </div>
+
             <section className="flex">
                 <div id="containerFiltrarPor">
                     <p>Filtrar por</p>
