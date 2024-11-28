@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const shoeProduct = {
+  id: 1,
   promotion: '30% OFF',
   img: 'src/Images/products/shoe-kwiss.png',
   category: 'Tênis',
@@ -79,7 +80,7 @@ export const generateProductHTML = (QntdItems) => {
 
   return products.map((prod, index) => (
     <div key={index} style={shoeProductStyles.containerItems}>
-      <a href="/Product">
+      <a href={`/Products/${prod.id}`}>
         <div className="containerImgItems relative">
         
           {index < 2 && (
@@ -91,14 +92,14 @@ export const generateProductHTML = (QntdItems) => {
       <a href="#tenis">
         <p style={shoeProductStyles.category}>{prod.category}</p>
       </a>
-      <a href="/Product">
+      <a href={`/Products/${prod.id}`}>
         <h4 style={shoeProductStyles.product}>{prod.product}</h4>
       </a>
       <div>
-        <a href="/Product">
+        <a href={`/Products/${prod.id}`}>
           <span style={shoeProductStyles.oldValue}>{prod.oldValue}</span>
         </a>
-        <a href="/Product">
+        <a href={`/Products/${prod.id}`}>
           <span style={shoeProductStyles.currentValue}>{prod.currentValue}</span>
         </a>
       </div>
