@@ -79,7 +79,7 @@ export const generateProductHTML = (QntdItems) => {
 
   return products.map((prod, index) => (
     <div key={index} style={shoeProductStyles.containerItems}>
-      <a href="#product-K-Swiss-V8-Masculino">
+      <a href="/Product">
         <div className="containerImgItems relative">
         
           {index < 2 && (
@@ -91,14 +91,14 @@ export const generateProductHTML = (QntdItems) => {
       <a href="#tenis">
         <p style={shoeProductStyles.category}>{prod.category}</p>
       </a>
-      <a href="#product-K-Swiss-V8-Masculino">
+      <a href="/Product">
         <h4 style={shoeProductStyles.product}>{prod.product}</h4>
       </a>
       <div>
-        <a href="#product-K-Swiss-V8-Masculino">
+        <a href="/Product">
           <span style={shoeProductStyles.oldValue}>{prod.oldValue}</span>
         </a>
-        <a href="#product-K-Swiss-V8-Masculino">
+        <a href="/Product">
           <span style={shoeProductStyles.currentValue}>{prod.currentValue}</span>
         </a>
       </div>

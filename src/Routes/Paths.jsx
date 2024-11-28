@@ -2,9 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../pages/Layout";
 import HomePage from "../pages/HomePage";
 import ProductListingPage from "../pages/ProductListingPage";
-//import ProductViewPage from "../layout/ProductViewPage";
 import NotFoundPage from "../pages/NotFoundPage";
-//import Product from "../pages/Product";
+import ProductViewPage from "../pages/ProductViewPage";
 
 const Paths = () => {
     return ( 
@@ -13,7 +12,9 @@ const Paths = () => {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<HomePage />}/> 
-                        <Route path="/products" element={<ProductListingPage />} />
+                        <Route path="/Products" element={<ProductListingPage />} />
+                        <Route path="/Product" element={<ProductViewPage />} />
+                        
                     </Route>
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
