@@ -8,27 +8,41 @@ const ButtonOrder = () => {
         setIsOpen(!isOpen);
     };
 
-    const options = {
+    const [options, setOptions] = useState({
         obj1: {
-            id: 1,
-            name: 'mais relevante'
+          id: 1,
+          name: 'mais relevante',
+          ref: '#mais-relevante'
         },
         obj2: {
-            id: 2,
-            name: 'maior desconto'
+          id: 2,
+          name: 'maior desconto',
+          ref: '#maior-deconto'
         },
         obj3: {
-            id: 3,
-            name: 'maior preço'
+          id: 3,
+          name: 'maior preço',
+          ref: '#maior-preco'
         },
         obj4: {
-            id: 4,
-            name: 'menor preço'
+          id: 4,
+          name: 'menor preço',
+          ref: '#menor-preco'
         },
-
-    }
+      });
     
-
+    const handleOptionClick = (objKey) => {
+        setOptions((prevOptions) => {
+          const selectedOption = prevOptions[objKey];
+          const newOptions = { ...prevOptions };
+    
+          newOptions[objKey] = { ...selectedOption, name: prevOptions.obj1.name, id: prevOptions.obj1.id, ref: prevOptions.obj1.ref };
+          newOptions.obj1 = { ...prevOptions.obj1, name: selectedOption.name, id: selectedOption.id, ref: selectedOption.ref};
+    
+          return newOptions;
+        });
+        setIsOpen(false);
+      };
 
     const ButtonOrder = styled.section `
         position: relative;
@@ -77,7 +91,7 @@ const ButtonOrder = () => {
             color: var(--dark-gray-2);
             text-align: center;
             font-size: 16px;
-
+            cursor: pointer;
             line-height: 28px;
             letter-spacing: 0.75px;
         }
@@ -97,15 +111,19 @@ const ButtonOrder = () => {
         Ordernar por<span>: {options.obj1.name}</span>
         <img src="src\Images\icons\arrow-bottom.svg" alt="Seta para baixo" />
       </button>
-      {
-        isOpen && (
-            <div id='options' className='flex flex-column' onClick={ShowMenu}>
-                <a href="#maior-desconto">{options.obj2.name}</a>
-                <a href="#maior-preco">{options.obj3.name}</a>
-                <a href="#menor-preco">{options.obj4.name}</a>
-            </div>
-        )
-      }
+      {isOpen && (
+        <div id="options" className="flex flex-column">
+          <a onClick={() => handleOptionClick('obj2')} href={options.obj2.ref}>
+            {options.obj2.name}
+          </a>
+          <a onClick={() => handleOptionClick('obj3')} href={options.obj3.ref}>
+            {options.obj3.name}
+          </a>
+          <a onClick={() => handleOptionClick('obj4')} href={options.obj4.ref}>
+            {options.obj4.name}
+          </a>
+        </div>
+      )}
     </ButtonOrder>
   )
 }
