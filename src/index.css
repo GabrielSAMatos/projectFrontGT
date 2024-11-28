@@ -30,7 +30,6 @@ body{
 
 }
 
-
 button{
   width: 220px;
   height: 40px;
@@ -93,4 +92,12 @@ color: var(--dark-gray-2);
 
 a{
   text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+input{
+  cursor: pointer;
 }
