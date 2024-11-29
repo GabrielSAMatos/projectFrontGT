@@ -184,14 +184,12 @@ const Offers = () => {
                                 <img 
                                 id="frufru"
                                 src={item.frufru} 
-                                alt=""
+                                alt="Várias bolinhas"
                                 className="absolute"
                                 />
                             </div>
-
                         </SwiperSlide>
                     ))}
-
                 </Swiper>
         </OffersContainer>
      );

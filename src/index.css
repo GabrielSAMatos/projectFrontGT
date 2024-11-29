@@ -101,3 +101,23 @@ ul{
 input{
   cursor: pointer;
 }
+
+.bg1{
+  background-color: #e2e3ff;
+}
+
+.bg2{
+  background-color: #ffe8bc;
+}
+
+.bg3{
+  background-color: #ffc0bc;
+}
+
+.bg4{
+  background-color: #dec699;
+}
+
+.bg5{
+  background-color: #e8dfcf;
+}
