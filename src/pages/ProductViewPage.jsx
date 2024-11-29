@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components'
 import CarrouselPVP from '../components/CarrouselPVP';
+import InfoProduct from '../components/InfoProduct';
 
 
 const ProductViewPageContainer = styled.section`
@@ -31,9 +32,8 @@ const ProductViewPageContainer = styled.section`
   }
 
   & section#ContainerCarrousel{
-    width: 702.73px;
     height: 689px;
-    border: 1px solid black;
+    gap: 40.27px;
   }
 `
 
@@ -52,9 +52,11 @@ const ProductViewPage = () => {
             <li><a href={location.pathname}>Tênis Nike Revolution 6 Next Nature Masculino</a></li>
           </ul>
         </div>
-        <section id='ContainerCarrousel'>
+        <section id='ContainerCarrousel' className='flex'>
           <CarrouselPVP />
+          <InfoProduct />
         </section>
+
       
 
     </ProductViewPageContainer>

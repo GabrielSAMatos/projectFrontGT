@@ -41,21 +41,18 @@ const ProductListingPage = () => {
             line-height: 22px;
             letter-spacing: 0.25px;
         }
-
+        
         & input{
             width: 22px;
             height: 22px;
             border-radius: 2px;
             border: 1px;
             margin-bottom: 10px;
-        }
-
-
-        & input{
             appearance: none;
             border: 1px solid black;
             position: relative;
         }
+
 
         & input[type="checkbox"]:checked{
             background-color: var(--primary);
@@ -76,7 +73,6 @@ const ProductListingPage = () => {
             border-radius: 50%;
             border: 1px solid var(--primary);
             background-image: radial-gradient(var(--primary) 40%, white 50%);
-
         }
 
         & .containerSelect select{
