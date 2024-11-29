@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import styled from 'styled-components'
 import CarrouselPVP from '../components/CarrouselPVP';
 import InfoProduct from '../components/InfoProduct';
+import { generateProductHTML } from '../components/ProductCard';
 
 
 const ProductViewPageContainer = styled.section`
@@ -55,6 +56,22 @@ const ProductViewPage = () => {
         <section id='ContainerCarrousel' className='flex'>
           <CarrouselPVP />
           <InfoProduct />
+        </section>
+        <section>
+        <div className="flex justify-content-between" style={{margin: '123px 0px 20px 0px'}}>
+            <h4 style={{textAlign: 'center'}}>Produtos Relacionados</h4>
+            <div className="flex">
+                <a id="verTodos" href="/Products" className="flex" style={{color: 'var(--primary)', textDecoration: 'none'}}>
+                    <p className="flex align-items-center justify-content-center mr-2">Ver todos</p>
+                    <span style={{fontSize: '25px'}}>&#129106;</span>
+                </a>
+            </div>
+        </div>                
+        <div className="containerAllItems">
+            <div className="containerAllItems grid justify-content-center">
+                {generateProductHTML(4)}
+            </div>
+        </div>
         </section>
 
       

@@ -128,3 +128,15 @@ input{
 .bg5{
   background-color: #e8dfcf;
 }
+
+.containerAllItems{ 
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.containerImgItems{
+  width: 292px;
+  height: 321px;
+  border-radius: 4px;
+  background-color: white;
+}
