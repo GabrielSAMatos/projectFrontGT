@@ -73,9 +73,6 @@ const ProductViewPage = () => {
             </div>
         </div>
         </section>
-
-      
-
     </ProductViewPageContainer>
   )
 }

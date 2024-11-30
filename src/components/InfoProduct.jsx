@@ -14,7 +14,7 @@ const InfoProductContaier = styled.section`
     letter-spacing: 0.9999998807907104px;
     }
 
-    & #ref{
+    & #ref, #ref a{
         color: var(--dark-gray-3);
         font-size: 12px;
         font-weight: 500;
@@ -29,6 +29,10 @@ const InfoProductContaier = styled.section`
 
     & #containerStars{
         margin-bottom: -25px;
+    }
+
+    & a p:hover{
+        text-decoration: underline;
     }
 
     & ul{
@@ -139,7 +143,6 @@ const InfoProductContaier = styled.section`
     }
 
     & #containerRadio{
-
         display: flex;
         gap: 14px;
         margin-top: 8px;
@@ -152,8 +155,9 @@ const InfoProductContaier = styled.section`
         border-radius: 50%;
     }
 
-    & input[type="radio"]:checked{
-        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #C92071
+    & input[type="radio"]:checked, input[type="radio"]:focus{
+        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #C92071;
+        outline: 0;
     }
 
     & #buy{
@@ -170,7 +174,7 @@ const InfoProduct = () => {
     <InfoProductContaier>
         <h2>Tênis Nike Revolution <br /> 
         6 Next Nature Masculino</h2>
-        <p id='ref'>Casual | Nike | REF:38416711</p>
+        <p id='ref'><a href="/Products">Casual</a> | <a href="/Products">Nike</a> | REF:38416711</p>
         <div id='containerGrade' className='flex flex-column'>
             <div id='containerStars' className='flex'>
                 <ul className='flex'>
@@ -182,7 +186,7 @@ const InfoProduct = () => {
                 </ul>
                 <div className='flex'>
                     <span id='grade'>4.7 <img src="../src/Images/icons/star-grade.svg" alt="Estrela da nota" /></span>
-                    <p id='reviews'>(90 avaliações )</p>
+                    <a href="/Reviews"><p id='reviews'>(90 avaliações )</p></a>
                 </div>
             </div>
             <div>
@@ -214,9 +218,9 @@ const InfoProduct = () => {
                 <h6>Modelo</h6>
                 <div id='containerRadio'>
                     <input type="radio" name="color" id="aqua" style={{backgroundColor: '#6FEEFF'}}/>
-                    <input type="radio" name="color" id="pink" style={{backgroundColor: '#FF6969'}}/>
-                    <input type="radio" name="color" id="gray" style={{backgroundColor: '#5E5E5E'}}/>
-                    <input type="radio" name="color" id="purple" style={{backgroundColor: '#6D70B7'}}/>
+                    <input type="radio" name="color" id="pink" autoFocus style={{backgroundColor: '#FF6969'}}/>
+                    <input type="radio" name="color" id="gray"  style={{backgroundColor: '#5E5E5E'}}/>
+                    <input type="radio" name="color" id="purple"  style={{backgroundColor: '#6D70B7'}}/>
                 </div>
             </div>
             <a href="/Fechar-Pedido"><button id='buy'>COMPRAR</button></a>
