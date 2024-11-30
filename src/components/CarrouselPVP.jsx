@@ -51,7 +51,7 @@ export default function Carrousel() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <CarrouselContainer style={{background: 'white'}}>
+    <CarrouselContainer>
 
         <Swiper 
         style={{
