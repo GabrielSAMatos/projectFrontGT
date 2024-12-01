@@ -120,7 +120,7 @@ const data = [
     title: (
         <>
             Queima de estoque Nike <img 
-                src="src\Images\icons\fire.png" 
+                src="src/Images/icons/fire.png" 
                 alt="Fire" 
                 style={{ marginBottom: '-5px', paddingTop: '5px' }} 
             />

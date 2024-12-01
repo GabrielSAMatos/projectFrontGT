@@ -92,9 +92,9 @@ const Footer = () => {
                                     incididunt ut labore et dolore.
                                 </p>
                                 <ul className="flex align-items-center gap-5">
-                                    <li><a href="#Facebook" target="_blank"><img src="..\src\Images\icons\facebook.svg" alt="Facebook icon" /></a></li>
-                                    <li><a href="#Instagram" target="_blank"><img src="..\src\Images\icons\instagram.svg" alt="Instagram icon" /></a></li>
-                                    <li><a href="#Twitter" target="_blank"><img src="..\src\Images\icons\twitter.svg" alt="Twitter icon" /></a></li>
+                                    <li><a href="/Facebook" target="_blank"><img src="..\src\Images\icons\facebook.svg" alt="Facebook icon" /></a></li>
+                                    <li><a href="/Instagram" target="_blank"><img src="..\src\Images\icons\instagram.svg" alt="Instagram icon" /></a></li>
+                                    <li><a href="/Twitter" target="_blank"><img src="..\src\Images\icons\twitter.svg" alt="Twitter icon" /></a></li>
                                     <li><a href="https://github.com/GabrielSAMatos" target="_blank"><img src="..\src\Images\icons\github.svg" alt="Github icon" /></a></li>
                                     <li><a href="https://www.linkedin.com/in/gabrielsamatos/" target="_blank"><img src="..\src\Images\icons\linkedin.svg" alt="Linkedin icon" /></a></li>
                                 </ul>
@@ -104,12 +104,12 @@ const Footer = () => {
                             <div id="divInfo">
                                 <p className="pTitle">Informação</p>
                                 <ul>
-                                    <li><a href="#Sobre-Drip-Store">Sobre Drip Store</a></li>
-                                    <li><a href="#Seguranca">Segurança</a></li>
-                                    <li><a href="#Wishlist">Wishlist</a></li>
-                                    <li><a href="#Blog">Blog</a></li>
-                                    <li><a href="#Trabalhe-conosco">Trabalhe conosco</a></li>
-                                    <li><a href="#Meus-Pedidos">Meus Pedidos</a></li>
+                                    <li><a href="/Sobre-Drip-Store">Sobre Drip Store</a></li>
+                                    <li><a href="/Seguranca">Segurança</a></li>
+                                    <li><a href="/Wishlist">Wishlist</a></li>
+                                    <li><a href="/Blog">Blog</a></li>
+                                    <li><a href="/Trabalhe-conosco">Trabalhe conosco</a></li>
+                                    <li><a href="/Meus-Pedidos">Meus Pedidos</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -117,11 +117,11 @@ const Footer = () => {
                             <div id="divCategory">
                                 <p className="pTitle">Categorias</p>
                                 <ul>
-                                    <li><a href="#Camisetas">Camisetas</a></li>
-                                    <li><a href="#Calcas">Calças</a></li>
-                                    <li><a href="#Bones">Bonés</a></li>
-                                    <li><a href="#Headphones">Headphones</a></li>
-                                    <li><a href="#Tenis">Tênis</a></li>
+                                    <li><a href="/Products">Camisetas</a></li>
+                                    <li><a href="/Products">Calças</a></li>
+                                    <li><a href="/Products">Bonés</a></li>
+                                    <li><a href="/Products">Headphones</a></li>
+                                    <li><a href="/Products">Tênis</a></li>
                                 </ul>
                             </div>
                         </li>
