@@ -2,8 +2,11 @@ Site desenvolvido com React.
 Utilizando as bibliotecas:     
 
 -"primeflex" e "primereact" para estilização,
+
 -"react-dom" e "react-router-dom" para uso de rotas e 
+
 -"swiper" para estilizacao do carrossel.
+
 
 O site é composto por 3 páginas todas com Header e Footer, nas quais:
 
