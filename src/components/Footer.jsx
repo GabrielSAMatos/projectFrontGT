@@ -128,8 +128,8 @@ const Footer = () => {
                         <li>
                             <div id="divContact">
                                 <p className="pTitle">Contato</p>
-                                <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
-                                <span>(85) 3051-3411</span>
+                                <p>R. Cidade Ecológica, 420 - Edson Queiroz, Fortaleza <br/>- CE , 60812-450</p>
+                                <span>(85) 9.8114-2292</span>
                             </div>
                         </li>
                     </ul>
