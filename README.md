@@ -5,6 +5,7 @@ Utilizando as bibliotecas:
     "swiper" para estilizacao do carrossel.
 
 O site é composto por 3 páginas todas com Header e Footer, nas quais:
+
 Home Page:
 
 -seção composta por um carrossel com 4 produtos diferentes
@@ -16,11 +17,13 @@ Home Page:
 -seção para um produto com oferta especial
 
 Produtos:
+
 -seção mostrando vários produtos
 
 -seção apenas visual para filtrar produtos e também para ordenar
 
 Produto:
+
 -seção composta por um carrosel com diferentes fundos do produto
 
 -seção para viajar para outras diferentes paginas do site
