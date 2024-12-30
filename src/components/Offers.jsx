@@ -156,10 +156,10 @@ const Offers = () => {
                     clickable: true, 
                     bulletActiveClass: "bulletActive", 
                     bulletClass: "bullet" }}
-                //autoplay={{
-                   // delay: 2000,
-                   // disableOnInteraction: false,
-                 // }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
                 >
                     {data.map ( (item) => (
                         <SwiperSlide 
