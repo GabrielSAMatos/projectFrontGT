@@ -1,16 +1,17 @@
 Site desenvolvido com React.
 Utilizando as bibliotecas:     
 
--"primeflex" e "primereact" para estilização,
+-primeflex e primereact para estilização,
 
--"react-dom" e "react-router-dom" para uso de rotas e 
+-react-dom e react-router-dom" para uso de rotas e 
 
--"swiper" para estilizacao do carrossel.
+-swiper para estilizacao do carrossel.
 
 
 O site é composto por 3 páginas todas com Header e Footer, nas quais:
 
 Header com menu navegavel e Footer com informações sobre.
+
 
 Home Page:
 
@@ -22,11 +23,13 @@ Home Page:
 
 -seção para um produto com oferta especial
 
+
 Produtos:
 
 -seção mostrando vários produtos
 
 -seção apenas visual para filtrar produtos e também para ordenar
+
 
 Produto:
 
