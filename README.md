@@ -6,20 +6,20 @@ Utilizando as bibliotecas:
 
 O site é composto por 3 páginas todas com Header e Footer, nas quais:
 Home Page:
-  >seção composta por um carrossel com 4 produtos diferentes
-  >seção de destaque tanto para produtos em promoções quanto para categoria de produtos
-  >seção para produtos em "alta"
-  >seção para um produto com oferta especial
+  -seção composta por um carrossel com 4 produtos diferentes
+  -seção de destaque tanto para produtos em promoções quanto para categoria de produtos
+  -seção para produtos em "alta"
+  -seção para um produto com oferta especial
 
 Produtos:
-  >seção mostrando vários produtos
-  >seção apenas visual para filtrar produtos e também para ordenar
+  -seção mostrando vários produtos
+  -seção apenas visual para filtrar produtos e também para ordenar
 
 Produto:
-  >seção composta por um carrosel com diferentes fundos do produto
-  >seção para viajar para outras diferentes paginas do site
-  >seção apenas visual com as informações do produto junto e um leve filtro para tamanho e modelo do mesmo
-  >seção para outros produtos
+  -seção composta por um carrosel com diferentes fundos do produto
+  -seção para viajar para outras diferentes paginas do site
+  -seção apenas visual com as informações do produto junto e um leve filtro para tamanho e modelo do mesmo
+  -seção para outros produtos
 
 Imagens da Home Page:
 ![image](https://github.com/user-attachments/assets/facd54fc-b653-4cec-98d4-78f0bfa85d01)
